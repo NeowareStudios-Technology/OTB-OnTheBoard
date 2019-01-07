@@ -26,12 +26,6 @@ public class VideoController : MonoBehaviour
     #endregion //PRIVATE_MEMBERS
 
 
-    //How to use the script
-        //- Attach the script to the image target with the video player to make it function properly.
-        //- The easiest way to replicate a video image target would be to duplicate then customize an
-        // already existing video.
-
-
     #region MONOBEHAVIOUR_METHODS
 
     void Start()

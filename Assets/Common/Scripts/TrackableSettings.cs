@@ -19,7 +19,7 @@ public class TrackableSettings : MonoBehaviour
     public bool m_DeviceTrackerEnabled = false;
 
     [HideInInspector]
-    public FusionProviderType m_FusionProviderType = FusionProviderType.OPTIMIZE_MODEL_TARGETS_AND_SMART_TERRAIN;
+     public FusionProviderType m_FusionProviderType = FusionProviderType.OPTIMIZE_MODEL_TARGETS_AND_SMART_TERRAIN;
     
     #endregion //PUBLIC_MEMBERS
 
@@ -56,6 +56,7 @@ public class TrackableSettings : MonoBehaviour
     private void OnBeforeVuforiaTrackerInitialized()
     {
         // set the selected fusion provider mask in the DeviceTrackerARController before it's being used.
+        Debug.LogWarning("DeviceTrackerARController.Instance.FusionProvider = " + m_FusionProviderType);
         DeviceTrackerARController.Instance.FusionProvider = m_FusionProviderType;
     }
 

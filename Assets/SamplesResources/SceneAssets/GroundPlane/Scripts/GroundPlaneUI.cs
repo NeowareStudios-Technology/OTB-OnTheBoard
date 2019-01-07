@@ -202,23 +202,13 @@ public class GroundPlaneUI : MonoBehaviour
         switch (statusInfo)
         {
             case Vuforia.TrackableBehaviour.StatusInfo.INITIALIZING:
-
-                if (Vuforia.VuforiaRuntimeUtilities.GetActiveFusionProvider() == 
-                    Vuforia.FusionProviderType.PLATFORM_SENSOR_FUSION)
-                {
-                    m_TrackerStatus.text = "Initializing Tracker";
-                }
-                else
-                {
-                    m_TrackerStatus.text = "Waiting for anchor to be placed to initialize";
-                }
-                
+                m_TrackerStatus.text = "Tracker Initializing";
                 break;
             case Vuforia.TrackableBehaviour.StatusInfo.EXCESSIVE_MOTION:
-                m_TrackerStatus.text = "Move slower";
+                m_TrackerStatus.text = "Excessive Motion";
                 break;
             case Vuforia.TrackableBehaviour.StatusInfo.INSUFFICIENT_FEATURES:
-                m_TrackerStatus.text = "Not enough visual features in the scene";
+                m_TrackerStatus.text = "Insufficient Features";
                 break;
             default:
                 m_TrackerStatus.text = "";

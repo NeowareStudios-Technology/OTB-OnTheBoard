@@ -1,5 +1,5 @@
 ﻿/*===============================================================================
-Copyright (c) 2017-2018 PTC Inc. All Rights Reserved.
+Copyright (c) 2017 PTC Inc. All Rights Reserved.
  
 Vuforia is a trademark of PTC Inc., registered in the United States and other
 countries.
@@ -7,7 +7,7 @@ countries.
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CloudContentManager : MonoBehaviour
+public class CloudRecoContentManager : MonoBehaviour
 {
 
     #region PRIVATE_MEMBER_VARIABLES

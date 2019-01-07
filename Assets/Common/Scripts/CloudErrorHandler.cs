@@ -123,9 +123,8 @@ public class CloudErrorHandler : MonoBehaviour, ICloudRecoEventHandler
         MessageBox.DisplayMessageBox(errorTitle, errorMsg, true, CloseDialog);
     }
 
-    // These interface methods implemented in seperate ICloudRecoEventHandler class
+    // These 3 interface methods implemented in seperate ICloudRecoEventHandler class
     public void OnInitialized() {}
-    public void OnInitialized(TargetFinder targetFinder) {}
     public void OnStateChanged(bool scanning) {}
     public void OnNewSearchResult(TargetFinder.TargetSearchResult targetSearchResult) {}
     

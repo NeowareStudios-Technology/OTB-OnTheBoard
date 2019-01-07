@@ -10,7 +10,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Vuforia;
 
-using System.Collections.Generic;
+using System.Collections;
 
 public class MenuOptions : MonoBehaviour
 {
@@ -91,27 +91,14 @@ public class MenuOptions : MonoBehaviour
 
         if (objTracker != null && objTracker.IsActive)
         {
-            Debug.Log("Stopping the ObjectTracker...");
             objTracker.Stop();
-
-            List<DataSet> tempDataSetList = new List<DataSet>();
-
-            // Create a temporary list of active datasets to prevent
-            // InvalidOperationException caused by modifying the active 
-            // dataset list while iterating through it
+            
             foreach (DataSet dataset in objTracker.GetDataSets())
             {
-                tempDataSetList.Add(dataset);
-            }
-
-            // Reset active datasets
-            foreach (DataSet dataset in tempDataSetList)
-            { 
                 objTracker.DeactivateDataSet(dataset);
                 objTracker.ActivateDataSet(dataset);
             }
 
-            Debug.Log("Restarting the ObjectTracker...");
             objTracker.Start();
         }
 

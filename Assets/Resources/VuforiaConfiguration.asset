@@ -8,12 +8,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: -2067402452, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
   m_Name: VuforiaConfiguration
-  m_EditorClassIdentifier: Vuforia.UnityExtensions:Vuforia:VuforiaConfiguration
+  m_EditorClassIdentifier: 
   vuforia:
     vuforiaLicenseKey: 
-    ufoLicenseKey: QVpmZmREVC8vLy8vQUFBQUtONCtldzE5NlVYYm9IMnUrNUJjTU5CMmNsUDZ3ZUxqSmt1NE4zY0VYSy9KYzVPNlB1ZWFOUEZOUExuSUU5SG9MeDJySUx0Mk1aVWdNdTl4L042eU4rZlNvQVZpUCtsdnNWVmpBR1RoM2V3eWY3cmExOFJ3Mmt5bGtWTk90OUljR3kxaHExekdsZTl4eVNQaFpEcHJCVU1xcHZONWVBU0xwUGdVaDFjSDlzMkVyZWxvcVV5MGR0N0dMd3ZjZ3lta2x3ZFdCc1ZMQi93dFVqc0hReUduOEVORUNGQktuZVJJQUU0M29hN1NXRTRYc0ZTNVIzRXozYkttK1V2N0JwRGpOZzFoWGk5TEhLVVlKUzFzMWJIVDFNaGNaZi95c0ppY1o2NUMyQlM4Y0ErSWxxQkpQYXZLK3pUMUp2MVpmY2VEdWxaU1BBT3dkbDFCcVUvd0NXY2FPalBwWTRPemZnZzNzTFkxQWFCRmpEVmo=
+    ufoLicenseKey: QVVRY21XSC8vLy8vQUFBQUtQb2h5QWZ6R1VJQ3MxNmo2eVZDY1N0Zk9zaWFIbVhaTFpCbys3YlNESU5CSzUzQXJlOHVVeFJNUWVWd3J5RjhjVUhDbEZTa1ZBVU80aTdTd1BTZ2NBajFnVVowc1JpQ2lBMXVMUTJTd2FPK2k5QVU2dDBVWFk0QjBIamorcTd0V2p4TmovZmFMOGV1TzhvbmQwU0F5Z01PejY5VURxRXVwYjd0ckJMNC84c0JQbU96SUo3Y3NyNnEzQXgvVk5jV1hKd3NrTnFKT0twdFliSXV1MDBHUXIxbHhuN3Q2bDdMS1AyUEdFYVhQQmViNkJDck5NTm8vWXZhQU9lWHZZYy94NVZpdGJmNGdWUkRkQ1NGZjhzcXNZaCtMbXh0dXlkVHRSNEhIZElkeGM1M21KNU5GWUhZZWtuNVBJM2c0TFNHVEM4aVkxdXdQZHVXak1LMEFNL0h4UnoxbGdONlQvZHdCN3dRd2VCaHdpVEc=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
     maxSimultaneousImageTargets: 1
@@ -21,6 +21,7 @@ MonoBehaviour:
     useDelayedLoadingObjectTargets: 0
     cameraDirection: 0
     mirrorVideoBackground: 0
+    version: 7.2.24
   digitalEyewear:
     cameraOffset: 0.06
     distortionRenderingLayer: 31
@@ -52,11 +53,12 @@ MonoBehaviour:
   deviceTracker:
     autoInitTracker: 0
     autoStartTracker: 0
-    trackingMode: 0
+    trackingMode: 1
     posePrediction: 0
     modelCorrectionMode: 0
     modelTransformEnabled: 0
     modelTransform: {x: 0, y: 0.1, z: -0.1}
+    fusionMode: 7
   smartTerrain:
     autoInitTracker: 0
     autoStartTracker: 0
